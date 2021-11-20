@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+sram_6t/sram_cell_6t_ckt_fin/extracted sram_cell_6t_ckt_fin
+sram_6t/sram_cell_6t_ckt_fin_layout_simulation/schematic sram_cell_6t_ckt_fin_layout_simulation
+$endmodel
+$net
+$endnet
+$param
+$endparam

@@ -1,0 +1,80 @@
+// Generated for: spectre
+// Generated on: Nov  3 15:32:37 2021
+// Design library name: sram_6t
+// Design cell name: sram_cell_8t_ckt_layout_simulation
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dN.m"
+include "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dP.m"
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout
+// View name: extracted
+// View type: maskLayout
+subckt sram_cell_8t_ckt_layout_extracted GND Q QB RBL RWL VDD WBL WBLB WWL
+    \+7 (QB Q VDD VDD) tsmc18dP w=2.7e-07 l=1.8e-07 as=2.268e-13 \
+        ad=2.268e-13 ps=1.89e-06 pd=1.89e-06 m=1 region=sat
+    \+6 (VDD QB Q VDD) tsmc18dP w=2.7e-07 l=1.8e-07 as=2.268e-13 \
+        ad=2.268e-13 ps=1.89e-06 pd=1.89e-06 m=1 region=sat
+    \+27 (GND QB) capacitor c=3.61422e-17 m=1
+    \+26 (GND WWL) capacitor c=7.857e-17 m=1
+    \+25 (Q GND) capacitor c=8.79984e-17 m=1
+    \+24 (RWL GND) capacitor c=4.24278e-17 m=1
+    \+23 (VDD QB) capacitor c=5.81418e-17 m=1
+    \+22 (VDD Q) capacitor c=5.81418e-17 m=1
+    \+21 (GND QB) capacitor c=3.86496e-17 m=1
+    \+20 (GND RBL) capacitor c=5.5908e-17 m=1
+    \+19 (GND WWL) capacitor c=1.07188e-16 m=1
+    \+18 (Q GND) capacitor c=3.86496e-17 m=1
+    \+17 (WBLB GND) capacitor c=2.22048e-17 m=1
+    \+16 (WBL GND) capacitor c=2.22048e-17 m=1
+    \+15 (RWL GND) capacitor c=6.68124e-17 m=1
+    \+14 (VDD QB) capacitor c=1.2416e-16 m=1
+    \+13 (VDD Q) capacitor c=1.5007e-16 m=1
+    \+12 (WWL QB) capacitor c=2.60289e-16 m=1
+    \+11 (GND WWL) capacitor c=5.05813e-16 m=1
+    \+10 (Q WWL) capacitor c=3.23402e-16 m=1
+    \+9 (Q GND) capacitor c=4.20768e-17 m=1
+    \+8 (VDD WWL) capacitor c=3.62734e-16 m=1
+    \+5 (RBL RWL 10 GND) tsmc18dN w=2.7e-07 l=1.8e-07 as=1.458e-13 \
+        ad=4.131e-13 ps=1.08e-06 pd=2.97e-06 m=1 region=sat
+    \+4 (10 Q GND GND) tsmc18dN w=2.7e-07 l=1.8e-07 as=3.645e-13 \
+        ad=1.458e-13 ps=2.61e-06 pd=1.08e-06 m=1 region=sat
+    \+2 (QB Q GND GND) tsmc18dN w=2.7e-07 l=1.8e-07 as=3.159e-13 \
+        ad=2.43e-13 ps=2.43e-06 pd=1.215e-06 m=1 region=sat
+    \+0 (GND QB Q GND) tsmc18dN w=2.7e-07 l=1.8e-07 as=2.43e-13 \
+        ad=2.268e-13 ps=1.215e-06 pd=1.89e-06 m=1 region=sat
+    \+3 (WBLB WWL QB GND) tsmc18dN w=5.4e-07 l=1.8e-07 as=2.43e-13 \
+        ad=2.916e-13 ps=1.215e-06 pd=1.62e-06 m=1 region=sat
+    \+1 (Q WWL WBL GND) tsmc18dN w=5.4e-07 l=1.8e-07 as=4.374e-13 \
+        ad=2.43e-13 ps=2.16e-06 pd=1.215e-06 m=1 region=sat
+ends sram_cell_8t_ckt_layout_extracted
+// End of subcircuit definition.
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout_simulation
+// View name: schematic
+C4 (RWL GND) capacitor c=10p m=1
+C3 (WWL GND) capacitor c=10p m=1
+C2 (WBL GND) capacitor c=10p m=1
+C1 (RBL GND) capacitor c=10p m=1
+C0 (WBLB GND) capacitor c=10p m=1
+I0 (GND Q QB RBL RWL VDD WBL WBLB WWL) sram_cell_8t_ckt_layout_extracted
+include "./_graphical_stimuli.scs"
+ic QB=0 Q=1.8 
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=100n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save Q QB WWL WBL WBLB 
+saveOptions options save=allpub

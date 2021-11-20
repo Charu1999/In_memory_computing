@@ -1,0 +1,94 @@
+@(#)$CDS: LVS version 6.1.8-64b 06/29/2021 19:05 (sjfhw316) $
+
+Command line: /package/eda/cadence/IC618/tools.lnx86/dfII/bin/64bit/LVS -dir /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/LVS -l -s -t /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/LVS/layout /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/LVS/layout/netlist
+       count
+        7               nets
+        7               terminals
+        2               pmos
+        4               nmos
+
+    Net-list summary for /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/LVS/schematic/netlist
+       count
+        7               nets
+        7               terminals
+        2               pmos
+        4               nmos
+
+
+    Terminal correspondence points
+    N4        N3        BL
+    N6        N4        BLB
+    N1        N1        GND
+    N2        N6        Q
+    N0        N5        QB
+    N5        N0        VDD
+    N3        N2        WL
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  6       6      
+        total                   6       6      
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  7       7      
+        total                   7       7      
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   7       7      
+
+
+Probe files from /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

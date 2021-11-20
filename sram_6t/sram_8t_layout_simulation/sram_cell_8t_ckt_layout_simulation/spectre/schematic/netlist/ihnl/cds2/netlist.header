@@ -1,0 +1,6 @@
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout
+// View name: extracted
+// View type: maskLayout
+subckt sram_cell_8t_ckt_layout_extracted GND Q QB RBL RWL VDD WBL WBLB WWL

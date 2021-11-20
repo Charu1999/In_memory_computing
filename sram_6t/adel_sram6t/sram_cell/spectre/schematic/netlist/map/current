@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "sram_cell"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/adel_sram6t/sram_cell/spectre/schematic/netlist"
+ )
+( model
+( "sram_6t/sram_cell/schematic" "sram_cell" )
+ )
+( "n" "_gpar0" )
+( "sram_cell" "ihnl/cds0/map" )
+ )

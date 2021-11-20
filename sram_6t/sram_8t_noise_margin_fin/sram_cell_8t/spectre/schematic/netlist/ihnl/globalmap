@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+sram_6t/sram_cell_8t/schematic sram_cell_8t
+$endmodel
+$net
+$endnet
+$param
+$endparam

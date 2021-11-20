@@ -1,0 +1,44 @@
+// Generated for: spectre
+// Generated on: Oct 30 21:41:38 2021
+// Design library name: sram_6t
+// Design cell name: sram_cell
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters _gpar0
+include "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dN.m"
+include "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dP.m"
+
+// Library name: sram_6t
+// Cell name: sram_cell
+// View name: schematic
+N3 (Q WL BL GND) tsmc18dN w=315.00n l=180.0n as=1.4175e-13 ad=1.4175e-13 \
+        ps=1.53u pd=1.53u m=1 region=sat
+N1 (GND QB Q GND) tsmc18dN w=405.00n l=180.0n as=1.8225e-13 ad=1.8225e-13 \
+        ps=1.71u pd=1.71u m=1 region=sat
+N4 (BLB WL QB GND) tsmc18dN w=315.00n l=180.0n as=1.4175e-13 ad=1.4175e-13 \
+        ps=1.53u pd=1.53u m=1 region=sat
+N2 (QB Q GND GND) tsmc18dN w=405.00n l=180.0n as=1.8225e-13 ad=1.8225e-13 \
+        ps=1.71u pd=1.71u m=1 region=sat
+P1 (Q QB VDD VDD) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+P0 (QB Q VDD VDD) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+C2 (WL GND) capacitor c=1p m=1
+C1 (BLB GND) capacitor c=1p m=1
+C0 (BL GND) capacitor c=1p m=1
+include "./_graphical_stimuli.scs"
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dc dc write="spectre.dc" oppoint=no maxiters=150 maxsteps=10000 \
+    annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save BL BLB WL Q QB 
+saveOptions options save=allpub

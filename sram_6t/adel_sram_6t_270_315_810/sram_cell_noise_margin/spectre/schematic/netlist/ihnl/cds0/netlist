@@ -1,0 +1,20 @@
+
+// Library name: sram_6t
+// Cell name: sram_cell_noise_margin
+// View name: schematic
+N4 (BLB WL Qbar GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+N3 (Q WL BL GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+N2 (Qbar Q GND GND) tsmc18dN w=315.00n l=180.0n as=1.4175e-13 \
+        ad=1.4175e-13 ps=1.53u pd=1.53u m=1 region=sat
+N1 (GND Qbar Q GND) tsmc18dN w=315.00n l=180.0n as=1.4175e-13 \
+        ad=1.4175e-13 ps=1.53u pd=1.53u m=1 region=sat
+P1 (Q Qbar VDD VDD) tsmc18dP w=810.0n l=180.0n as=3.645e-13 ad=3.645e-13 \
+        ps=2.52u pd=2.52u m=1 region=sat
+P0 (Qbar Q VDD VDD) tsmc18dP w=810.0n l=180.0n as=3.645e-13 ad=3.645e-13 \
+        ps=2.52u pd=2.52u m=1 region=sat
+C2 (WL GND) capacitor c=1p m=1
+C1 (BLB GND) capacitor c=1p m=1
+C0 (BL GND) capacitor c=1p m=1
+V0 (Q GND) vsource type=dc dc=x

@@ -1,0 +1,3 @@
+projectDir = '"./../sram_6t"
+designInfo = '("sram_6t" "sram_cell" "schematic" "spectre")
+descriptionText = "None"

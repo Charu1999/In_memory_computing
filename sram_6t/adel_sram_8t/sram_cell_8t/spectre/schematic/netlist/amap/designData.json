@@ -1,0 +1,1 @@
+{"hierarchy":{"top_level":1,"1":{"insts":{"N3":2,"N2":2,"C2":4,"C0":4,"C1":4,"C3":4,"N4":2,"N1":2,"N6":2,"P1":3,"P0":3,"N5":2}}},"modelMap":{"tsmc18dP":[3],"tsmc18dN":[2],"capacitor":[4]},"cellviews":[["sram_6t","sram_cell_8t","schematic"],["NCSU_Analog_Parts","nmos4","spectre"],["NCSU_Analog_Parts","pmos4","spectre"],["NCSU_Analog_Parts","cap","spectre"]]}

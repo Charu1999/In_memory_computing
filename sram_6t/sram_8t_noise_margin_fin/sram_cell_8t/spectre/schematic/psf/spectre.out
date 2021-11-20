@@ -1,0 +1,275 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.801.isr17 64bit -- 19 Apr 2017
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: 559mg23   Host: ecegrid-thin3.ecn.purdue.edu   HostID: 2E805504   PID: 3887
+Memory  available: 1.7978 GB  physical: 67.3780 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU           E7340  @ 2.40GHz
+        Socket: Processors [Frequency]
+        0:       0 [1600.0],  4 [1600.0],  8 [1600.0], 12 [1600.0]
+        2:       1 [1600.0],  5 [2133.0],  9 [1867.0], 13 [1867.0]
+        4:       2 [1600.0],  6 [1600.0], 10 [1600.0], 14 [1600.0]
+        6:       3 [1600.0],  7 [2133.0], 11 [1600.0], 15 [1600.0]
+        
+System load averages (1min, 5min, 15min) : 5.6 %, 4.3 %, 5.6 %
+
+
+Simulating `input.scs' on ecegrid-thin3.ecn.purdue.edu at 12:28:10 AM, Wed Nov 3, 2021 (process id: 3887).
+Current working directory: /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/sram_8t_noise_margin_fin/sram_cell_8t/spectre/schematic/netlist
+Command line:
+    /package/eda/cadence/MMSIM151/tools/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out -format psfxl -raw ../psf  \
+        +aps +lqtimeout 900 -maxw 5 -maxn 5
+
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/sram_8t_noise_margin_fin/sram_cell_8t/spectre/schematic/netlist/input.scs
+Reading file:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading link:  /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dN.m
+Reading file:  /package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc18dN.m
+Reading file:  /package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/publicModel/tsmc18dN
+Reading link:  /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dP.m
+Reading file:  /package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc18dP.m
+Reading file:  /package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/publicModel/tsmc18dP
+Reading file:  /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/sram_8t_noise_margin_fin/sram_cell_8t/spectre/schematic/netlist/_graphical_stimuli.scs
+Time for NDB Parsing: CPU = 145.877 ms, elapsed = 359.529 ms.
+Time accumulated: CPU = 198.184 ms, elapsed = 359.549 ms.
+Peak resident memory used = 37.9 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (36.4 %)      1 (27.3 %)      2 (39.4 %)      3 (24.2 %)
+                 4 (29.4 %)      5 (32.4 %)      6 (26.5 %)      7 (41.2 %)
+                 8 (60.6 %)      9 (25.8 %)     10 (67.6 %)     11 (35.3 %)
+                12 (31.4 %)     13 (30.3 %)     14 (23.5 %)     15 (34.3 %)
+        Other   
+Reading link:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 49.34 ms, elapsed = 52.022 ms.
+Time accumulated: CPU = 248.217 ms, elapsed = 412.601 ms.
+Peak resident memory used = 44.6 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-8527): There are some nodes and instances removed from the netlist topology check. Check the circuit and correct the topology. Or use preserve_inst to keep them if necessary.
+
+***********************************************
+  Total removed instances 2 ( dangling 0, terminals connected together 2)  
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-8528): Terminals are connected together. C1 is removed.
+    WARNING (SPECTRE-8528): Terminals are connected together. C3 is removed.
+
+
+  Total removed nodes 0 ( dangling nodes 0, floating nodes 0 )
+***********************************************
+Time for EDB Visiting: CPU = 1.82 ms, elapsed = 1.82104 ms.
+Time accumulated: CPU = 250.445 ms, elapsed = 414.827 ms.
+Peak resident memory used = 45.2 Mbytes.
+
+
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 10
+            bsim3v3 8     
+          capacitor 4     
+            vsource 7     
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre during initial setup.
+    0 resistors are shorted because of `rabsshort'
+    APS Enabled.
+
+Time for parsing: CPU = 7.852 ms, elapsed = 48.445 ms.
+Time accumulated: CPU = 258.643 ms, elapsed = 463.617 ms.
+Peak resident memory used = 46.5 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 100 ns)
+*************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    There are 2 IC nodes defined.
+
+DC simulation time: CPU = 1.087 ms, elapsed = 1.16801 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 100 ns
+    step = 100 ps
+    maxstep = 2 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+                 ic     2       
+
+    tran: time = 3.1 ns       (3.1 %), step = 1.6 ns        (1.6 %)
+    tran: time = 9.1 ns       (9.1 %), step = 2 ns            (2 %)
+
+Notice from spectre at time = 10 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node _vVDD:p.
+Notice from spectre at time = 12.19 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node QB.
+Notice from spectre at time = 13.2452 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node QB.
+
+    tran: time = 13.25 ns    (13.2 %), step = 1.055 ns     (1.06 %)
+
+Notice from spectre at time = 15.2452 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node QB.
+Notice from spectre at time = 17.2452 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node QB.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 19.25 ns    (19.2 %), step = 2 ns            (2 %)
+    tran: time = 23.25 ns    (23.2 %), step = 2 ns            (2 %)
+    tran: time = 29.25 ns    (29.2 %), step = 2 ns            (2 %)
+    tran: time = 33.25 ns    (33.2 %), step = 2 ns            (2 %)
+    tran: time = 39.25 ns    (39.2 %), step = 2 ns            (2 %)
+    tran: time = 43.25 ns    (43.2 %), step = 2 ns            (2 %)
+    tran: time = 49.25 ns    (49.2 %), step = 2 ns            (2 %)
+    tran: time = 53.25 ns    (53.2 %), step = 2 ns            (2 %)
+    tran: time = 59.25 ns    (59.2 %), step = 2 ns            (2 %)
+    tran: time = 63.25 ns    (63.2 %), step = 2 ns            (2 %)
+    tran: time = 69.25 ns    (69.2 %), step = 2 ns            (2 %)
+    tran: time = 73.25 ns    (73.2 %), step = 2 ns            (2 %)
+    tran: time = 79.25 ns    (79.2 %), step = 2 ns            (2 %)
+    tran: time = 83.25 ns    (83.2 %), step = 2 ns            (2 %)
+    tran: time = 89.25 ns    (89.2 %), step = 2 ns            (2 %)
+    tran: time = 93.25 ns    (93.2 %), step = 2 ns            (2 %)
+    tran: time = 98.62 ns    (98.6 %), step = 1.377 ns     (1.38 %)
+Number of accepted tran steps =             102
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (26.2 %)      1 (20.6 %)      2 (22.4 %)      3 (18.8 %)
+                 4 (20.3 %)      5 (26.5 %)      6 (17.6 %)      7 (21.7 %)
+                 8 (36.8 %)      9 (18.5 %)     10 (43.5 %)     11 (23.9 %)
+                12 (18.8 %)     13 (29.9 %)     14 (17.4 %)     15 (21.7 %)
+        Other   
+Initial condition solution time: CPU = 1.201 ms, elapsed = 1.32799 ms.
+Intrinsic tran analysis time:    CPU = 23.656 ms, elapsed = 203.029 ms.
+Total time required for tran analysis `tran': CPU = 29.844 ms, elapsed = 247.456 ms.
+Time accumulated: CPU = 293.753 ms, elapsed = 866.515 ms.
+Peak resident memory used = 48.9 Mbytes.
+
+
+Notice from spectre.
+    42 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (12:28:11 AM, Wed Nov 3, 2021):
+Time used: CPU = 334 ms, elapsed = 1.45 s, util. = 23%.
+Time spent in licensing: elapsed = 29.4 ms.
+Peak memory used = 50.1 Mbytes.
+Simulation started at: 12:28:10 AM, Wed Nov 3, 2021, ended at: 12:28:11 AM, Wed Nov 3, 2021, with elapsed time (wall clock): 1.45 s.
+spectre completes with 0 errors, 4 warnings, and 12 notices.

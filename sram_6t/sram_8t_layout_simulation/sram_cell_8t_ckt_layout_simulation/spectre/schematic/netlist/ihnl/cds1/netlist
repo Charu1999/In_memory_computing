@@ -1,0 +1,10 @@
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout_simulation
+// View name: schematic
+C4 (RWL GND) capacitor c=10p m=1
+C3 (WWL GND) capacitor c=10p m=1
+C2 (WBL GND) capacitor c=10p m=1
+C1 (RBL GND) capacitor c=10p m=1
+C0 (WBLB GND) capacitor c=10p m=1
+I0 (GND Q QB RBL RWL VDD WBL WBLB WWL) sram_cell_8t_ckt_layout_extracted

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  3 23:06:16 2021
+// Design library name: sram_6t
+// Design cell name: sram_cell_8t_noise_margin
+// Design view name: schematic
+simulator lang=spectre
+global 0

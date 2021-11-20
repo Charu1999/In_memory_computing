@@ -1,0 +1,21 @@
+EVcdFile ""
+EVcdInfoFile ""
+VcdFile ""
+VcdInfoFile ""
+VectorFile nil
+allDefinitionFiles nil
+allDspfFiles nil
+allEVcdFiles nil
+allIncludedPaths nil
+allPspiceFiles nil
+allSpefFiles nil
+allStimulusFiles ((t "/home/ecegrid/a/559mg23/Downloads/read_stimuli.scs") (nil "/home/ecegrid/a/559mg23/Downloads/write_simul.scs"))
+allVcdFiles nil
+allVectorFiles nil
+definitionFiles nil
+dspfFile nil
+hlcheck "off"
+includePath ""
+pspiceFile nil
+spefFile nil
+stimulusFile ("/home/ecegrid/a/559mg23/Downloads/read_stimuli.scs")

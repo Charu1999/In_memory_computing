@@ -1,0 +1,3 @@
+projectDir = '"./sram_6t_post_layout_simulation"
+designInfo = '("sram_6t" "sram_cell_6t_ckt_fin_layout_simulation" "schematic" "spectre")
+descriptionText = "None"

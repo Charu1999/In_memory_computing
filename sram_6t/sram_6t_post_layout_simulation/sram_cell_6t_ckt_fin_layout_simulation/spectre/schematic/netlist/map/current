@@ -1,0 +1,16 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "sram_cell_6t_ckt_fin_layout_simulation"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/sram_6t_post_layout_simulation/sram_cell_6t_ckt_fin_layout_simulation/spectre/schematic/netlist"
+ )
+( model
+( "sram_6t/sram_cell_6t_ckt_fin/extracted" "sram_cell_6t_ckt_fin" )
+( "sram_6t/sram_cell_6t_ckt_fin_layout_simulation/schematic" "sram_cell_6t_ckt_fin_layout_simulation" )
+ )
+( "sram_cell_6t_ckt_fin" "ihnl/cds0/map" )
+( "sram_cell_6t_ckt_fin_layout_simulation" "ihnl/cds1/map" )
+ )

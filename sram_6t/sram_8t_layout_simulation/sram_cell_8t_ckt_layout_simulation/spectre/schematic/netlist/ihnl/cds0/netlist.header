@@ -1,0 +1,5 @@
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout
+// View name: schematic
+subckt sram_cell_8t_ckt_layout GND Q QB RBL RWL VDD WBL WBLB WWL

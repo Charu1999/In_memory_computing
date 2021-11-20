@@ -1,0 +1,3 @@
+projectDir = '"./sram_8t_noise_margin_fin"
+designInfo = '("sram_6t" "sram_cell_8t_noise_margin" "schematic" "spectre")
+descriptionText = "None"

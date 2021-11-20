@@ -1,0 +1,3 @@
+projectDir = '"./adel_sram6t_act"
+designInfo = '("sram_6t" "sram_cell" "schematic" "spectre")
+descriptionText = "None"
