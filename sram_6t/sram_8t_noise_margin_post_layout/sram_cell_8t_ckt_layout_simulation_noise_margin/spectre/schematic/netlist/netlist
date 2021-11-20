@@ -1,0 +1,34 @@
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout
+// View name: schematic
+subckt sram_cell_8t_ckt_layout GND Q QB RBL RWL VDD WBL WBLB WWL
+    N6 (RBL RWL net1 GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 \
+        ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
+    N5 (net1 Q GND GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 \
+        ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
+    N4 (WBLB WWL QB GND) tsmc18dN w=540.0n l=180.0n as=2.43e-13 \
+        ad=2.43e-13 ps=1.98u pd=1.98u m=1 region=sat
+    N3 (Q WWL WBL GND) tsmc18dN w=540.0n l=180.0n as=2.43e-13 ad=2.43e-13 \
+        ps=1.98u pd=1.98u m=1 region=sat
+    N2 (QB Q GND GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    N1 (GND QB Q GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    P1 (Q QB VDD VDD) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    P0 (QB Q VDD VDD) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+ends sram_cell_8t_ckt_layout
+// End of subcircuit definition.
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout_simulation_noise_margin
+// View name: schematic
+C2 (WBL GND) capacitor c=10p m=1
+C0 (WBLB GND) capacitor c=10p m=1
+C1 (RBL GND) capacitor c=10p m=1
+C4 (RWL GND) capacitor c=10p m=1
+C3 (WWL GND) capacitor c=10p m=1
+I0 (GND Q QB RBL RWL VDD WBL WBLB WWL) sram_cell_8t_ckt_layout
+V0 (Q GND) vsource type=dc dc=x

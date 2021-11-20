@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  1 19:37:52 2021
+// Design library name: sram_6t
+// Design cell name: sram_cell_6t_ckt_fin
+// Design view name: schematic
+simulator lang=spectre
+global 0

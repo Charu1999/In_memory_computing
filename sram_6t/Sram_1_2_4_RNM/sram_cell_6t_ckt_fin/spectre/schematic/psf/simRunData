@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"sram_6t\" \"sram_cell_6t_ckt_fin\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Nov  1 19:49:08 2021"
+"title" ""
+"analysisList" "()"
+END

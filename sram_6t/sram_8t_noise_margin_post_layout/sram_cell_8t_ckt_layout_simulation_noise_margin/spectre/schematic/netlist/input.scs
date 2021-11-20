@@ -1,0 +1,60 @@
+// Generated for: spectre
+// Generated on: Nov  3 16:30:51 2021
+// Design library name: sram_6t
+// Design cell name: sram_cell_8t_ckt_layout_simulation_noise_margin
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters x=0
+include "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dN.m"
+include "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dP.m"
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout
+// View name: schematic
+subckt sram_cell_8t_ckt_layout GND Q QB RBL RWL VDD WBL WBLB WWL
+    N6 (RBL RWL net1 GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 \
+        ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
+    N5 (net1 Q GND GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 \
+        ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
+    N4 (WBLB WWL QB GND) tsmc18dN w=540.0n l=180.0n as=2.43e-13 \
+        ad=2.43e-13 ps=1.98u pd=1.98u m=1 region=sat
+    N3 (Q WWL WBL GND) tsmc18dN w=540.0n l=180.0n as=2.43e-13 ad=2.43e-13 \
+        ps=1.98u pd=1.98u m=1 region=sat
+    N2 (QB Q GND GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    N1 (GND QB Q GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    P1 (Q QB VDD VDD) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    P0 (QB Q VDD VDD) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+ends sram_cell_8t_ckt_layout
+// End of subcircuit definition.
+
+// Library name: sram_6t
+// Cell name: sram_cell_8t_ckt_layout_simulation_noise_margin
+// View name: schematic
+C2 (WBL GND) capacitor c=10p m=1
+C0 (WBLB GND) capacitor c=10p m=1
+C1 (RBL GND) capacitor c=10p m=1
+C4 (RWL GND) capacitor c=10p m=1
+C3 (WWL GND) capacitor c=10p m=1
+I0 (GND Q QB RBL RWL VDD WBL WBLB WWL) sram_cell_8t_ckt_layout
+V0 (Q GND) vsource type=dc dc=x
+include "./_graphical_stimuli.scs"
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc param=x start=0 stop=1.8 oppoint=rawfile maxiters=150 maxsteps=10000 \
+    annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

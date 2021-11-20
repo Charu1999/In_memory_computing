@@ -1,0 +1,9 @@
+
+// Library name: sram_6t
+// Cell name: sram_cell_6t_ckt_fin_layout_simulation_noise_margin
+// View name: schematic
+C2 (WL GND) capacitor c=10p m=1
+C0 (BL GND) capacitor c=10p m=1
+C1 (BLB GND) capacitor c=10p m=1
+I0 (BL BLB GND Q QB VDD WL) sram_cell_6t_ckt_fin
+V0 (Q GND) vsource type=dc dc=x

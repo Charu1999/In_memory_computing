@@ -1,0 +1,4 @@
+CADENCE IHNL11142
+
+sram_6t sram_cell_8t_ckt_layout schematic cds0
+sram_6t sram_cell_8t_ckt_layout_simulation_noise_margin schematic cds1

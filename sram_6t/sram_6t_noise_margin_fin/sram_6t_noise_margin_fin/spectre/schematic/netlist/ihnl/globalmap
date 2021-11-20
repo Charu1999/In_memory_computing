@@ -1,0 +1,9 @@
+CADENCE IHNL11140
+$model
+sram_6t/sram_6t_noise_margin_fin/schematic sram_6t_noise_margin_fin
+$endmodel
+$net
+$endnet
+$param
+x x
+$endparam

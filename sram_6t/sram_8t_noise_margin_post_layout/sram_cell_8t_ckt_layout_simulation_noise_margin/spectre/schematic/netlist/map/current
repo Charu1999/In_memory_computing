@@ -1,0 +1,16 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "sram_cell_8t_ckt_layout_simulation_noise_margin"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/sram_8t_noise_margin_post_layout/sram_cell_8t_ckt_layout_simulation_noise_margin/spectre/schematic/netlist"
+ )
+( model
+( "sram_6t/sram_cell_8t_ckt_layout_simulation_noise_margin/schematic" "sram_cell_8t_ckt_layout_simulation_noise_margin" )
+( "sram_6t/sram_cell_8t_ckt_layout/schematic" "sram_cell_8t_ckt_layout" )
+ )
+( "sram_cell_8t_ckt_layout_simulation_noise_margin" "ihnl/cds1/map" )
+( "sram_cell_8t_ckt_layout" "ihnl/cds0/map" )
+ )

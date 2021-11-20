@@ -1,0 +1,7 @@
+_vWBLB (WBLB 0) vsource dc=0 type=dc
+_vRBL (RBL 0) vsource dc=0 type=dc
+_vRWL (RWL 0) vsource dc=0 type=dc
+_vWWL (WWL 0) vsource dc=0 type=dc
+_vWBL (WBL 0) vsource dc=0 type=dc
+_vGND (GND 0) vsource dc=0 type=dc
+_vVDD (VDD 0) vsource dc=1.8 type=dc

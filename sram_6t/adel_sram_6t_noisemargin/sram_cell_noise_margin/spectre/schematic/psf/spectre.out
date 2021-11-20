@@ -1,0 +1,252 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.801.isr17 64bit -- 19 Apr 2017
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: 559mg23   Host: ecegrid-thin7.ecn.purdue.edu   HostID: 2E805B04   PID: 30959
+Memory  available: 99.2720 GB  physical: 270.1770 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2600.0] ( 20 ),  1 [1200.0] ( 21 ),  2 [1200.0] ( 22 )
+                 3 [1200.0] ( 23 ),  4 [1200.0] ( 24 ),  5 [1200.0] ( 25 )
+                 6 [1200.0] ( 26 ),  7 [1200.0] ( 27 ),  8 [1200.0] ( 28 )
+                 9 [1200.0] ( 29 )
+        1:      10 [1200.0] ( 30 ), 11 [1200.0] ( 31 ), 12 [1200.0] ( 32 )
+                13 [1200.0] ( 33 ), 14 [1200.0] ( 34 ), 15 [1200.0] ( 35 )
+                16 [1200.0] ( 36 ), 17 [1200.0] ( 37 ), 18 [1200.0] ( 38 )
+                19 [1200.0] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 5.8 %, 5.9 %, 5.7 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on ecegrid-thin7.ecn.purdue.edu at 3:15:27 PM, Sun Oct 31, 2021 (process id: 30959).
+Current working directory: /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/adel_sram_6t_noisemargin/sram_cell_noise_margin/spectre/schematic/netlist
+Command line:
+    /package/eda/cadence/MMSIM151/tools/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out -format psfxl -raw ../psf  \
+        +aps +lqtimeout 900 -maxw 5 -maxn 5
+
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /package/eda/cadence/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/adel_sram_6t_noisemargin/sram_cell_noise_margin/spectre/schematic/netlist/input.scs
+Reading file:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading link:  /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dN.m
+Reading file:  /package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc18dN.m
+Reading file:  /package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/publicModel/tsmc18dN
+Reading link:  /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/tsmc18dP.m
+Reading file:  /package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc18dP.m
+Reading file:  /package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/publicModel/tsmc18dP
+Reading file:  /home/ecegrid/a/559mg23/vlsi_assignment/sram_6t/adel_sram_6t_noisemargin/sram_cell_noise_margin/spectre/schematic/netlist/_graphical_stimuli.scs
+Time for NDB Parsing: CPU = 133.282 ms, elapsed = 331.19 ms.
+Time accumulated: CPU = 172.586 ms, elapsed = 331.201 ms.
+Peak resident memory used = 41.2 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (83.9 %)      1 (23.5 %)      2 (13.3 %)      3 (12.9 %)
+                 4 (19.4 %)      5 (31.2 %)      6 (15.2 %)      7 (19.4 %)
+                 8 (32.3 %)      9 (9.7 %)      10 (6.1 %)      11 (6.2 %)
+                12 (9.4 %)      13 (6.5 %)      14 (6.2 %)      15 (3.2 %)
+                16 (3.1 %)      18 (18.8 %)     19 (9.1 %)      20 (9.1 %)
+                21 (3.2 %)      22 (6.5 %)      23 (6.2 %)      24 (15.6 %)
+                25 (6.5 %)      26 (6.5 %)      27 (6.1 %)      28 (6.1 %)
+                29 (6.2 %)      30 (6.5 %)      31 (6.2 %)      32 (3.1 %)
+                33 (3.1 %)      35 (3.0 %)      36 (3.2 %)      37 (3.1 %)
+                38 (3.1 %)      
+        Other   
+Reading link:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /package/eda/cadence/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 46.938 ms, elapsed = 51.0442 ms.
+Time accumulated: CPU = 219.911 ms, elapsed = 382.629 ms.
+Peak resident memory used = 47.9 Mbytes.
+
+Time for EDB Visiting: CPU = 1.234 ms, elapsed = 1.23405 ms.
+Time accumulated: CPU = 221.471 ms, elapsed = 384.187 ms.
+Peak resident memory used = 48.5 Mbytes.
+
+
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 7
+            bsim3v3 6     
+          capacitor 3     
+            vsource 6     
+
+Analysis and control statement inventory:
+                 dc 2     
+               info 7     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre during initial setup.
+    0 resistors are shorted because of `rabsshort'
+    APS Enabled.
+
+Time for parsing: CPU = 5.053 ms, elapsed = 57.4231 ms.
+Time accumulated: CPU = 226.783 ms, elapsed = 441.868 ms.
+Peak resident memory used = 49.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+Convergence achieved in 10 iterations.
+DC simulation time: CPU = 231.476 ms, elapsed = 509.43 ms.
+Total time required for dc analysis `dcOp': CPU = 4.237 ms, elapsed = 67.1022 ms.
+Time accumulated: CPU = 232.04 ms, elapsed = 539.876 ms.
+Peak resident memory used = 50.9 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+
+********************************
+DC Analysis `dc': x = (0 -> 1.8)
+********************************
+
+Opening the PSF file ../psf/dc.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+    dc: x = 72e-03         (4 %), step = 36e-03          (2 %)
+    dc: x = 108e-03        (6 %), step = 36e-03          (2 %)
+    dc: x = 144e-03        (8 %), step = 36e-03          (2 %)
+    dc: x = 180e-03       (10 %), step = 36e-03          (2 %)
+    dc: x = 216e-03       (12 %), step = 36e-03          (2 %)
+    dc: x = 252e-03       (14 %), step = 36e-03          (2 %)
+    dc: x = 288e-03       (16 %), step = 36e-03          (2 %)
+    dc: x = 324e-03       (18 %), step = 36e-03          (2 %)
+    dc: x = 360e-03       (20 %), step = 36e-03          (2 %)
+    dc: x = 396e-03       (22 %), step = 36e-03          (2 %)
+    dc: x = 432e-03       (24 %), step = 36e-03          (2 %)
+    dc: x = 468e-03       (26 %), step = 36e-03          (2 %)
+    dc: x = 504e-03       (28 %), step = 36e-03          (2 %)
+    dc: x = 540e-03       (30 %), step = 36e-03          (2 %)
+    dc: x = 576e-03       (32 %), step = 36e-03          (2 %)
+    dc: x = 612e-03       (34 %), step = 36e-03          (2 %)
+    dc: x = 648e-03       (36 %), step = 36e-03          (2 %)
+    dc: x = 684e-03       (38 %), step = 36e-03          (2 %)
+    dc: x = 720e-03       (40 %), step = 36e-03          (2 %)
+    dc: x = 756e-03       (42 %), step = 36e-03          (2 %)
+    dc: x = 792e-03       (44 %), step = 36e-03          (2 %)
+    dc: x = 828e-03       (46 %), step = 36e-03          (2 %)
+    dc: x = 864e-03       (48 %), step = 36e-03          (2 %)
+    dc: x = 900e-03       (50 %), step = 36e-03          (2 %)
+    dc: x = 936e-03       (52 %), step = 36e-03          (2 %)
+    dc: x = 972e-03       (54 %), step = 36e-03          (2 %)
+    dc: x = 1.008         (56 %), step = 36e-03          (2 %)
+    dc: x = 1.044         (58 %), step = 36e-03          (2 %)
+    dc: x = 1.08          (60 %), step = 36e-03          (2 %)
+    dc: x = 1.116         (62 %), step = 36e-03          (2 %)
+    dc: x = 1.152         (64 %), step = 36e-03          (2 %)
+    dc: x = 1.188         (66 %), step = 36e-03          (2 %)
+    dc: x = 1.224         (68 %), step = 36e-03          (2 %)
+    dc: x = 1.26          (70 %), step = 36e-03          (2 %)
+    dc: x = 1.296         (72 %), step = 36e-03          (2 %)
+    dc: x = 1.332         (74 %), step = 36e-03          (2 %)
+    dc: x = 1.368         (76 %), step = 36e-03          (2 %)
+    dc: x = 1.404         (78 %), step = 36e-03          (2 %)
+    dc: x = 1.44          (80 %), step = 36e-03          (2 %)
+    dc: x = 1.476         (82 %), step = 36e-03          (2 %)
+    dc: x = 1.512         (84 %), step = 36e-03          (2 %)
+    dc: x = 1.548         (86 %), step = 36e-03          (2 %)
+    dc: x = 1.584         (88 %), step = 36e-03          (2 %)
+    dc: x = 1.62          (90 %), step = 36e-03          (2 %)
+    dc: x = 1.656         (92 %), step = 36e-03          (2 %)
+    dc: x = 1.692         (94 %), step = 36e-03          (2 %)
+    dc: x = 1.728         (96 %), step = 36e-03          (2 %)
+    dc: x = 1.764         (98 %), step = 36e-03          (2 %)
+    dc: x = 1.8          (100 %), step = 36e-03          (2 %)
+DC simulation time: CPU = 254.944 ms, elapsed = 641.851 ms.
+Total time required for dc analysis `dc': CPU = 18.211 ms, elapsed = 43.8669 ms.
+Time accumulated: CPU = 255.603 ms, elapsed = 674.568 ms.
+Peak resident memory used = 51.7 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (3:15:28 PM, Sun Oct 31, 2021):
+Time used: CPU = 282 ms, elapsed = 1.17 s, util. = 24.1%.
+Time spent in licensing: elapsed = 25.7 ms.
+Peak memory used = 52.4 Mbytes.
+Simulation started at: 3:15:27 PM, Sun Oct 31, 2021, ended at: 3:15:28 PM, Sun Oct 31, 2021, with elapsed time (wall clock): 1.17 s.
+spectre completes with 0 errors, 1 warning, and 3 notices.

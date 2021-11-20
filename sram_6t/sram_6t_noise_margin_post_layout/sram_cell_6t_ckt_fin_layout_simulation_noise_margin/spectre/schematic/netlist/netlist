@@ -1,0 +1,45 @@
+
+// Library name: sram_6t
+// Cell name: sram_cell_6t_ckt_fin
+// View name: extracted
+// View type: maskLayout
+subckt sram_cell_6t_ckt_fin BL BLB GND Q QB VDD WL
+    \+5 (QB Q VDD VDD) tsmc18dP w=2.7e-07 l=1.8e-07 as=2.268e-13 \
+        ad=2.268e-13 ps=1.89e-06 pd=1.89e-06 m=1 region=sat
+    \+4 (VDD QB Q VDD) tsmc18dP w=2.7e-07 l=1.8e-07 as=2.268e-13 \
+        ad=2.268e-13 ps=1.89e-06 pd=1.89e-06 m=1 region=sat
+    \+21 (GND QB) capacitor c=2.19996e-17 m=1
+    \+20 (Q GND) capacitor c=2.19996e-17 m=1
+    \+19 (WL GND) capacitor c=7.857e-17 m=1
+    \+18 (VDD QB) capacitor c=5.81418e-17 m=1
+    \+17 (VDD Q) capacitor c=5.81418e-17 m=1
+    \+16 (GND QB) capacitor c=3.86496e-17 m=1
+    \+15 (Q GND) capacitor c=3.86496e-17 m=1
+    \+14 (WL GND) capacitor c=1.07188e-16 m=1
+    \+13 (BL GND) capacitor c=2.22048e-17 m=1
+    \+12 (VDD QB) capacitor c=1.2416e-16 m=1
+    \+11 (VDD Q) capacitor c=1.5007e-16 m=1
+    \+10 (BLB GND) capacitor c=2.22048e-17 m=1
+    \+9 (WL QB) capacitor c=2.66753e-16 m=1
+    \+8 (WL GND) capacitor c=4.19639e-16 m=1
+    \+7 (WL Q) capacitor c=3.25249e-16 m=1
+    \+6 (VDD WL) capacitor c=3.62734e-16 m=1
+    \+2 (BLB WL QB GND) tsmc18dN w=5.4e-07 l=1.8e-07 as=4.131e-13 \
+        ad=2.916e-13 ps=1.35e-06 pd=1.62e-06 m=1 region=sat
+    \+1 (Q WL BL GND) tsmc18dN w=5.4e-07 l=1.8e-07 as=4.374e-13 \
+        ad=4.86e-13 ps=2.16e-06 pd=1.35e-06 m=1 region=sat
+    \+3 (QB Q GND GND) tsmc18dN w=1.08e-06 l=1.8e-07 as=1.0692e-12 \
+        ad=4.131e-13 ps=3.06e-06 pd=1.35e-06 m=1 region=sat
+    \+0 (GND QB Q GND) tsmc18dN w=1.08e-06 l=1.8e-07 as=4.86e-13 \
+        ad=7.776e-13 ps=1.35e-06 pd=2.52e-06 m=1 region=sat
+ends sram_cell_6t_ckt_fin
+// End of subcircuit definition.
+
+// Library name: sram_6t
+// Cell name: sram_cell_6t_ckt_fin_layout_simulation_noise_margin
+// View name: schematic
+C2 (WL GND) capacitor c=10p m=1
+C0 (BL GND) capacitor c=10p m=1
+C1 (BLB GND) capacitor c=10p m=1
+I0 (BL BLB GND Q QB VDD WL) sram_cell_6t_ckt_fin
+V0 (Q GND) vsource type=dc dc=x

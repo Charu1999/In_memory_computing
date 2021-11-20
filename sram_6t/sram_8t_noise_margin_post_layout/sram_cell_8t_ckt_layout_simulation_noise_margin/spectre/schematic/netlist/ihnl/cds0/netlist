@@ -1,0 +1,18 @@
+    N6 (RBL RWL net1 GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 \
+        ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
+    N5 (net1 Q GND GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 \
+        ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
+    N4 (WBLB WWL QB GND) tsmc18dN w=540.0n l=180.0n as=2.43e-13 \
+        ad=2.43e-13 ps=1.98u pd=1.98u m=1 region=sat
+    N3 (Q WWL WBL GND) tsmc18dN w=540.0n l=180.0n as=2.43e-13 ad=2.43e-13 \
+        ps=1.98u pd=1.98u m=1 region=sat
+    N2 (QB Q GND GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    N1 (GND QB Q GND) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    P1 (Q QB VDD VDD) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+    P0 (QB Q VDD VDD) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 \
+        ps=1.44u pd=1.44u m=1 region=sat
+ends sram_cell_8t_ckt_layout
+// End of subcircuit definition.

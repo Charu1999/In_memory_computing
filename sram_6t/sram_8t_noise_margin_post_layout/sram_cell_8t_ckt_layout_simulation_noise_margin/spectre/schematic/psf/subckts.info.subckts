@@ -1,0 +1,24 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "15.1.0.801.isr17"
+"date" "11:19:12 PM, Wed Nov 3, 2021"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"sram_cell_8t_ckt_layout" "subckt" (
+""
+"GND Q QB RBL RWL VDD WBL WBLB WWL"
+)
+END

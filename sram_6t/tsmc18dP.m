@@ -1,0 +1,1 @@
+/package/eda/cells/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc18dP.m
